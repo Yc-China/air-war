@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="con">
+			<!--开始游戏层-->
+			<div class="box box-login" id="start_page">
+			  	<div class="box-login-img">
+			  		<img src="img/LOGO.png"/>
+			  	</div>
+			  	<div class="box-login-box" id="start_button">开始游戏</div>
+			</div>
+			<!--游戏层-->
+		    <div class="box box-con" id="plane_container"></div>
+		    <!--游戏场景层-->
+		    <div class="box bgimg">
+		    	<ul>
+		    		<li><img src="img/img_bg_level_1.jpg"/></li>
+		    		<li><img src="img/img_bg_level_1.jpg"/></li>
+		    		<li><img src="img/img_bg_level_1.jpg"/></li>
+		    	</ul>
+		    	<audio src="img/bgm_zhandou2.mp3" loop autoplay></audio>
+		    </div>
+		    <!--游戏ui层-->
+		    <div class="box box-ui">
+		    	<div class="grade" id="grades"></div>
+		    	<div class="vitas" id="vitas"></div>
+		    </div>
+		    <!--游戏结束层-->
+		    <div class="box box-over">
+		    	<div class="box-over-con">
+		    		<div class="box-over-con-con">
+		    			<div id="newstart">重新开始</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</body>
+	<script src="js/methods.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var feiji=new Games();
+		feiji.feijidazhan()
+	</script>
+</html>
